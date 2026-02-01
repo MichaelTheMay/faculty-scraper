@@ -1,0 +1,67 @@
+{
+  "name": "faculty-scraper",
+  "version": "1.0.0",
+  "description": "Faculty directory scraper with MCP server integration",
+  "type": "module",
+  "main": "dist/mcp-server.js",
+  "bin": {
+    "faculty-scraper": "./dist/mcp-server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/mcp-server.js",
+    "dev": "tsx watch src/mcp-server.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:step": "vitest run --reporter=verbose",
+    "test:integration": "vitest run test/integration",
+    "test:mcp": "vitest run test/mcp",
+    "test:enrichment": "vitest run test/integration/enrichment.test.ts",
+    "debug:step": "tsx scripts/debug-step.ts",
+    "debug:pipeline": "tsx scripts/debug-pipeline.ts",
+    "debug:replay": "tsx scripts/debug-replay.ts",
+    "verify:db": "tsx scripts/verify-db.ts",
+    "verify:step": "tsx scripts/verify-step.ts",
+    "verify:diff": "tsx scripts/verify-diff.ts",
+    "init-db": "tsx scripts/init-db.ts",
+    "export-csv": "tsx scripts/export-csv.ts",
+    "scrape": "tsx scripts/run-scrape.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/ test/ scripts/",
+    "lint:fix": "eslint src/ test/ scripts/ --fix",
+    "ci": "npm run lint && npm run typecheck && npm test"
+  },
+  "keywords": [
+    "faculty",
+    "scraper",
+    "mcp",
+    "playwright",
+    "firecrawl"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "better-sqlite3": "^11.7.0",
+    "cheerio": "^1.0.0",
+    "csv-stringify": "^6.5.2",
+    "playwright": "^1.49.1",
+    "uuid": "^11.0.5",
+    "winston": "^3.17.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.5",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "eslint": "^9.39.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.54.0",
+    "vitest": "^2.1.8"
+  }
+}

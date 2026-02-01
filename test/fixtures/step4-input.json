@@ -1,0 +1,12 @@
+{
+  "html": "<!DOCTYPE html><html><body><div class=\"faculty-list\"><div class=\"faculty-card\"><img src=\"https://example.com/photo1.jpg\" alt=\"John Doe\"><h3 class=\"faculty-name\">John Doe</h3><p class=\"faculty-title\">Professor</p><a href=\"mailto:john.doe@example.edu\">john.doe@example.edu</a><a href=\"tel:+1-555-123-4567\">555-123-4567</a><a href=\"https://johndoe.com\" class=\"website\">Personal Website</a><p class=\"research-areas\">Machine Learning, Natural Language Processing, Computer Vision</p></div><div class=\"faculty-card\"><img src=\"https://example.com/photo2.jpg\" alt=\"Jane Smith\"><h3 class=\"faculty-name\">Dr. Jane Smith</h3><p class=\"faculty-title\">Associate Professor</p><a href=\"mailto:jane.smith@example.edu\">jane.smith@example.edu</a><a href=\"https://janesmith.dev\">Homepage</a><p class=\"research-areas\">Distributed Systems, Cloud Computing</p></div><div class=\"faculty-card\"><h3 class=\"faculty-name\">Bob Johnson, PhD</h3><p class=\"faculty-title\">Assistant Professor of Computer Science</p><a href=\"mailto:bob@example.edu\">Contact</a></div></div></body></html>",
+  "selectors": {
+    "card": ".faculty-card",
+    "name": ".faculty-name",
+    "title": ".faculty-title",
+    "email": "a[href^=\"mailto:\"]",
+    "phone": "a[href^=\"tel:\"]",
+    "photo": "img",
+    "research_areas": ".research-areas"
+  }
+}
