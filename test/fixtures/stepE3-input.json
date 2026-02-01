@@ -1,0 +1,42 @@
+{
+  "existing": {
+    "id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "full_name": "John Doe",
+    "university": "Harvard",
+    "department": "Computer Science",
+    "title": "Professor",
+    "email": "john.doe@example.edu",
+    "h_index": 25,
+    "citations_total": 5000,
+    "research_areas": ["Machine Learning", "AI"]
+  },
+  "enriched": {
+    "h_index": 28,
+    "citations_total": 5500,
+    "research_areas": ["Deep Learning", "Neural Networks"],
+    "bio": "John Doe is a leading researcher in machine learning.",
+    "google_scholar_url": "https://scholar.google.com/citations?user=abc123",
+    "publications": [
+      {
+        "title": "Deep Learning for NLP",
+        "authors": ["John Doe", "Jane Smith"],
+        "venue": "NeurIPS",
+        "venue_type": "conference",
+        "year": 2023,
+        "citations": 150,
+        "source": "semantic_scholar"
+      },
+      {
+        "title": "Transformer Architectures",
+        "authors": ["John Doe"],
+        "venue": "ICML",
+        "venue_type": "conference",
+        "year": 2022,
+        "citations": 200,
+        "source": "dblp"
+      }
+    ]
+  }
+}

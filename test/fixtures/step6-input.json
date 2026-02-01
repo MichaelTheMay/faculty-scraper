@@ -1,0 +1,33 @@
+{
+  "researchers": [
+    {
+      "first_name": "John",
+      "last_name": "Doe",
+      "full_name": "John Doe",
+      "title": "Professor",
+      "email": "john.doe@example.edu",
+      "phone": "555-123-4567",
+      "website": "https://johndoe.com",
+      "photo_url": "https://example.com/photo1.jpg",
+      "research_areas": ["Machine Learning", "Natural Language Processing", "Computer Vision"]
+    },
+    {
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "full_name": "Jane Smith",
+      "title": "Associate Professor",
+      "email": "jane.smith@example.edu",
+      "website": "https://janesmith.dev",
+      "photo_url": "https://example.com/photo2.jpg",
+      "research_areas": ["Distributed Systems", "Cloud Computing"]
+    },
+    {
+      "first_name": "Bob",
+      "last_name": "Johnson",
+      "full_name": "Bob Johnson",
+      "title": "Assistant Professor",
+      "email": "bob@example.edu"
+    }
+  ],
+  "directory_id": 1
+}
