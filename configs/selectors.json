@@ -1,0 +1,74 @@
+{
+  "defaults": {
+    "card": ".faculty-card, .person-card, .profile-card, article.faculty, .views-row, .team-member",
+    "name": ".name, .faculty-name, .person-name, h2, h3, .views-field-title a",
+    "title": ".title, .position, .faculty-title, .views-field-field-person-title",
+    "email": "a[href^='mailto:'], .email, .contact-email",
+    "phone": ".phone, .telephone, a[href^='tel:']",
+    "office": ".office, .location, .room, .views-field-field-room",
+    "website": "a[href*='http']:not([href*='mailto'])",
+    "photo": "img.photo, img.headshot, img.portrait, .views-field-field-person-image img",
+    "research_areas": ".research, .interests, .expertise, .views-field-field-research-areas"
+  },
+  "patterns": {
+    "load_more": [
+      "button.load-more",
+      "a.load-more",
+      "button.see-more",
+      "a.see-more",
+      "[data-action='load-more']",
+      ".pager-load-more a",
+      "button:contains('Load More')",
+      "button:contains('Show All')",
+      "button:contains('View All')"
+    ],
+    "pagination": [
+      ".pagination a",
+      ".pager a",
+      "nav.pages a",
+      "[aria-label='Next page']",
+      "[aria-label='Next']",
+      ".next-page",
+      "a.next"
+    ],
+    "faculty_count": [
+      "text matching /showing \\d+ of \\d+/i",
+      "text matching /\\d+ faculty/i",
+      "text matching /\\d+ results/i",
+      ".results-count",
+      ".faculty-count"
+    ]
+  },
+  "university_specific": {
+    "harvard": {
+      "card": ".faculty-card",
+      "name": ".faculty-name",
+      "title": ".faculty-title"
+    },
+    "mit": {
+      "card": ".person-card",
+      "name": ".person-name",
+      "title": ".person-title"
+    },
+    "stanford": {
+      "card": ".views-row",
+      "name": ".views-field-title a",
+      "title": ".views-field-field-person-title"
+    },
+    "cmu": {
+      "card": ".faculty-card",
+      "name": ".name",
+      "title": ".title"
+    },
+    "berkeley": {
+      "card": "tr.faculty",
+      "name": "td:first-child a",
+      "title": "td:nth-child(2)"
+    },
+    "cornell": {
+      "card": ".views-row",
+      "name": ".views-field-title a",
+      "title": ".views-field-field-person-title"
+    }
+  }
+}

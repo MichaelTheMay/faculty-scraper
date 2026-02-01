@@ -1,0 +1,127 @@
+{
+  "directories": [
+    {
+      "university": "Harvard",
+      "department": "SEAS Computer Science",
+      "url": "https://seas.harvard.edu/computer-science/faculty-research",
+      "scrape_method": "firecrawl",
+      "selectors": {
+        "card": ".faculty-card, .views-row",
+        "name": ".faculty-name, .field-name",
+        "title": ".faculty-title, .field-title",
+        "email": "a[href^='mailto:']"
+      }
+    },
+    {
+      "university": "MIT",
+      "department": "CSAIL",
+      "url": "https://www.csail.mit.edu/people",
+      "scrape_method": "playwright",
+      "load_more_selector": "button.load-more, a.see-more",
+      "scroll_to_load": true,
+      "selectors": {
+        "card": ".person-card, .faculty-member",
+        "name": ".person-name, .member-name",
+        "title": ".person-title, .member-title",
+        "email": "a[href^='mailto:']"
+      }
+    },
+    {
+      "university": "Stanford",
+      "department": "Computer Science",
+      "url": "https://cs.stanford.edu/people/faculty",
+      "scrape_method": "firecrawl",
+      "selectors": {
+        "card": ".views-row, .faculty-card",
+        "name": ".views-field-title a, .faculty-name",
+        "title": ".views-field-field-person-title, .faculty-title",
+        "email": "a[href^='mailto:']"
+      }
+    },
+    {
+      "university": "Carnegie Mellon",
+      "department": "School of Computer Science",
+      "url": "https://www.cs.cmu.edu/people/faculty",
+      "scrape_method": "playwright",
+      "selectors": {
+        "card": ".faculty-card, .person-card",
+        "name": ".name, h3",
+        "title": ".title, .position",
+        "email": "a[href^='mailto:']"
+      }
+    },
+    {
+      "university": "UC Berkeley",
+      "department": "EECS",
+      "url": "https://www2.eecs.berkeley.edu/Faculty/Lists/CS/faculty.html",
+      "scrape_method": "firecrawl",
+      "selectors": {
+        "card": "tr.faculty, .faculty-row",
+        "name": "a.name, td:first-child a",
+        "title": ".title, td:nth-child(2)",
+        "email": "a[href^='mailto:']"
+      }
+    },
+    {
+      "university": "Cornell",
+      "department": "Computer Science",
+      "url": "https://www.cs.cornell.edu/people/faculty",
+      "scrape_method": "hybrid",
+      "selectors": {
+        "card": ".views-row, .faculty-card",
+        "name": ".views-field-title a, .name",
+        "title": ".views-field-field-person-title",
+        "email": "a[href^='mailto:']"
+      }
+    },
+    {
+      "university": "Princeton",
+      "department": "Computer Science",
+      "url": "https://www.cs.princeton.edu/people/faculty",
+      "scrape_method": "firecrawl",
+      "selectors": {
+        "card": ".views-row, .faculty-card",
+        "name": ".views-field-title a, .name",
+        "title": ".views-field-field-title",
+        "email": "a[href^='mailto:']"
+      }
+    },
+    {
+      "university": "University of Washington",
+      "department": "Computer Science & Engineering",
+      "url": "https://www.cs.washington.edu/people/faculty",
+      "scrape_method": "playwright",
+      "selectors": {
+        "card": ".views-row, .person-card",
+        "name": ".views-field-title a, .name",
+        "title": ".views-field-field-people-title",
+        "email": "a[href^='mailto:']"
+      }
+    },
+    {
+      "university": "Georgia Tech",
+      "department": "College of Computing",
+      "url": "https://www.cc.gatech.edu/people/faculty",
+      "scrape_method": "firecrawl",
+      "selectors": {
+        "card": ".views-row, .faculty-card",
+        "name": ".views-field-title a, .name",
+        "title": ".views-field-field-people-title",
+        "email": "a[href^='mailto:']"
+      }
+    },
+    {
+      "university": "UIUC",
+      "department": "Computer Science",
+      "url": "https://cs.illinois.edu/about/people/faculty",
+      "scrape_method": "playwright",
+      "scroll_to_load": true,
+      "selectors": {
+        "card": ".views-row, .person-card",
+        "name": ".views-field-title a, .name",
+        "title": ".views-field-field-position",
+        "email": "a[href^='mailto:']"
+      }
+    }
+  ]
+}

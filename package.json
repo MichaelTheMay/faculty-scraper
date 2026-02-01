@@ -26,6 +26,7 @@
     "init-db": "tsx scripts/init-db.ts",
     "export-csv": "tsx scripts/export-csv.ts",
     "scrape": "tsx scripts/run-scrape.ts",
+    "seed": "tsx scripts/seed-directories.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/ test/ scripts/",
     "lint:fix": "eslint src/ test/ scripts/ --fix",
